@@ -1,0 +1,178 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Page Background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    line-height: 1.6;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: 
+        linear-gradient(45deg, #00bcd4 25%, transparent 50%) /* Light blue diagonal stripes */; 
+    background-size: 20px 20px; /* Adjust the size of the stripes */
+}
+
+/* Blurry Black Background Overlay */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    backdrop-filter: blur(10px); /* Apply blur to the background */
+    z-index: -1; /* Ensure the overlay is behind the content */
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent header */
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between; /* Aligns items on each side */
+    align-items: center;
+    z-index: 10;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00bcd4; /* Light blue text */
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #fff; /* White on hover */
+}
+
+/* Cart Section */
+#cart {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: rgba(34, 34, 34, 0.9); /* Dark transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+}
+
+#cart h2 {
+    text-align: center;
+    color: #00bcd4; /* Light blue heading */
+    margin-bottom: 20px;
+}
+
+/* Cart Items */
+#cart-items {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+#cart-items li {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+#cart-items li:hover {
+    background-color: #444; /* Slightly lighter background on hover */
+}
+
+#cart-items .item-info {
+    display: flex;
+    align-items: center;
+}
+
+#cart-items input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    background-color: #222;
+    color: #fff;
+    border: 2px solid #00bcd4;
+    border-radius: 4px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#cart-items input[type="number"]:hover {
+    background-color: #00bcd4; /* Neon blue on hover */
+    color: #000;
+}
+
+/* Cart Item Count */
+#cart-count {
+    font-weight: bold;
+    color: #f44336; /* Red color for count */
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent; /* Make the button background transparent for box style */
+    color: #00bcd4; /* Neon blue text */
+    border: 2px solid #00bcd4; /* Neon blue border */
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #00bcd4; /* Neon blue background */
+    color: #000; /* Black text */
+    box-shadow: 0 0 15px #00bcd4, 0 0 30px #00bcd4, 0 0 60px #00bcd4, 0 0 90px #00bcd4;
+    transform: scale(1.1); /* Slight scaling effect */
+}
+
+button:active {
+    transform: scale(0.98); /* Slight shrink effect on click */
+    box-shadow: 0 0 5px #00bcd4, 0 0 15px #00bcd4;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

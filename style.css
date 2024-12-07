@@ -1,0 +1,465 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #00f0ff;
+}
+
+.logo h1 {
+  font-size: 2.5rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), 0 0 5px #00f0ff;
+
+}
+
+.white {
+  color: #fff;
+}
+
+.neon {
+  color: #00f0ff;
+  text-shadow: 0 0 5px #00f0ff, 0 0 5px #00f0ff, 0 0 10px #00f0ff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+}
+
+.nav-box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #222;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.nav-box a:hover {
+  background-color: #00f0ff;
+  color: #000;
+}
+
+/* Sections */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+  min-height: 400px; /* Ensure sections have enough height */
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.section a {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  animation: fadeInUp 1s ease 0.2s forwards;
+}
+
+.section p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  animation: fadeInUp 1s ease 0.2s forwards;
+}
+
+/* Divider Styles */
+.divider {
+  width: 100%;
+  margin: 40px auto;
+  border: 1px solid #00f0ff;
+  opacity: 0.6;
+}
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
+  min-height: 400px;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.section p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  animation: fadeInUp 1s ease 0.2s forwards;
+}
+
+@media (max-width: 768px) {
+  .divider {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .divider {
+    width: 100%;
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Home Section */
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  min-height: 500px; /* Increase height for better balance */
+}
+
+.text-content {
+  max-width: 65%;  /* Adjust width for better text alignment */
+  text-align: left;
+}
+
+.get-started-btn {
+  padding: 12px 30px;
+  background-color: #00f0ff;
+  color: #000;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.get-started-btn:hover {
+  background-color: #fff;
+  color: #00f0ff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Image */
+.profile-image {
+  width: 400px; /* Increased width for a larger image */
+  height: 400px; /* Increased height for a larger image */
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.profile-image:hover {
+  box-shadow: 0 0 15px 5px #00f0ff; /* Neon blue glow effect */
+  transform: scale(1.1); /* Slightly larger image on hover */
+}
+
+/* Mouse shadow effect */
+.profile-image:active {
+  transform: scale(1); /* Reset scale when mouse is clicked */
+}
+
+/* Additional Effect for Mouse Movement */
+.profile-image {
+  position: relative;
+  will-change: transform, box-shadow;
+}
+
+.profile-image:hover {
+  animation: neon-glow 0.3s infinite alternate; /* Continuous animation */
+}
+
+@keyframes neon-glow {
+  0% {
+    box-shadow: 0 0 10px 3px #00f0ff;
+  }
+  100% {
+    box-shadow: 0 0 25px 10px #00f0ff;
+  }
+}
+
+
+/* About Section */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 500px; /* Adjust height for balance */
+}
+
+.text-content {
+  max-width: 50%;
+  text-align: left;
+}
+
+.images-content {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* About Section Images */
+.about-image {
+  width: 250px; /* Increased width for larger images */
+  height: 250px; /* Increased height for larger images */
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.1); /* Slightly larger on hover */
+  box-shadow: 0 4px 15px rgba(0, 240, 255, 0.6); /* Neon glow effect on hover */
+}
+
+
+/* Product Section */
+.product-list {
+  display: flex;
+  justify-content: space-evenly; /* Center and space evenly */
+  gap: 25px;
+  flex-wrap: wrap; /* Allow items to wrap */
+  margin: 0 auto; /* Center the product list */
+  padding: 0 15px; /* Optional: Adding padding to prevent items from touching the edges */
+}
+
+.product-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: calc(25% - 25px); /* Adjust the width to fit 4 products per row */
+  border: 2px solid #00f0ff;
+  box-sizing: border-box; /* Ensures padding and border do not affect the width */
+  margin-bottom: 25px; /* Spacing between rows */
+}
+
+/* Adjust the width for smaller screens */
+@media (max-width: 1200px) {
+  .product-card {
+    width: calc(33.33% - 25px); /* 3 products per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: calc(50% - 25px); /* 2 products per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 100%; /* 1 product per row */
+  }
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.color-label {
+  font-size: 1rem;
+  color: #fff;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.color-selector {
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #333;
+  border: 1px solid #00f0ff;
+  color: #fff;
+}
+
+.add-to-cart-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00f0ff;
+  color: #000;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #fff;
+  color: #00f0ff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-card {
+  position: relative;
+}
+
+/* Adding some spacing to the bottom of each product */
+.product-card .add-to-cart-btn {
+  margin-top: 15px;
+}
+
+.product-card .color-selector {
+  width: 100%;
+}
+
+
+/* Contact Section */
+#contact {
+  padding: 60px 20px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 3rem;
+  color: #00f0ff;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+/* Social Media Links - Box Style */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.social-links .icon {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 60px;
+  background-color: #222;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10px; /* Rounded box style */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 240, 255, 0.3); /* Glow effect */
+}
+
+.social-links .icon:hover {
+  background-color: #00f0ff;
+  color: #000;
+  box-shadow: 0 6px 15px rgba(0, 240, 255, 0.5);
+  transform: translateY(-5px);
+}
+
+.social-links .icon:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 240, 255, 0.2);
+}
+
+/* Specific Colors for Each Icon */
+.social-links .icon.instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.social-links .icon.facebook {
+  background-color: #3b5998;
+}
+
+.social-links .icon.tiktok {
+  background: linear-gradient(45deg, #25f4ee, #fe2c55);
+  color: #fff;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .social-links .icon {
+      width: 120px;
+      height: 50px;
+      font-size: 1rem;
+  }
+
+  #contact p {
+      font-size: 1rem;
+  }
+}
+
+/* Footer */
+footer {
+  padding: 10px 5px; /* Increased padding for more height */
+  text-align: center;
+  background-color: #111;
+  color: #bbb;
+  margin-top: 10px; /* Add space between the sections and footer */
+  height: 10px; /* Ensure the height is determined by the content */
+  min-height: 15px; /* Set a minimum height */
+}
+
+footer p {
+  font-size: 1rem; /* Slightly larger font size */
+  margin: 5px 0;
+
+}

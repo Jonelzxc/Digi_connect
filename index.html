@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIGI CONNECT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <h1><span class="white">DIGI</span><span class="neon">CONNECT</span></h1>
+    </div>
+    <ul class="nav-links">
+      <li class="nav-box"><a href="#home">Home</a></li>
+      <li class="nav-box"><a href="#about">About</a></li>
+      <li class="nav-box"><a href="#products">Products</a></li>
+      <li class="nav-box"><a href="#contact">Contact</a></li>
+      <li class="nav-box"><a href="cart.html">Cart</a></li>
+    </ul>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <div class="home-content">
+      <div class="text-content">
+        <h2>Welcome to <span class="white">DIGI</span><span class="neon">CONNECT</span></h2>
+        <p>Upgrade your workspace with quality peripherals - where business meets technology.</p>
+        <a href="#about" class="get-started-btn">Get Started</a>
+      </div>
+      <div class="image-content">
+        <img src="logo.jpg" alt="Business Profile" class="profile-image">
+      </div>
+    </div>
+    <hr class="divider">
+  </section>
+
+<!-- About Section -->
+<section id="about" class="section">
+  <div class="about-content">
+    <div class="text-content">
+      <h2>About Us</h2>
+      <p>
+        We are a technology-driven company focused on delivering innovative solutions for a diverse range of industries. Our goal is to help businesses enhance their operations with cutting-edge technology and high-quality peripherals.
+      </p>
+    </div>
+    <div class="images-content">
+      <img src="image1.jpg" alt="Image 1" class="about-image">
+      <img src="image2.jpg" alt="Image 2" class="about-image">
+    </div>
+  </div>
+  <hr class="divider">
+</section>
+
+<!-- Products Section -->
+<section id="products" class="section">
+  <div class="content">
+    <h2>Our Products</h2>
+    <div class="product-list">
+      
+      <div class="product-card">
+        <img src="1.jpg" alt="Product 1">
+        <h3>DIGI Cooling Pad</h3>
+        <p class="price">1499</p>
+        <label for="color-1" class="color-label">Choose Color:</label>
+        <select id="color-1" class="color-selector">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          
+        </select>
+        <a href="javascript:void(0);" class="add-to-cart-btn" onclick="addToCart('DIGI Cooling Pad', event, 1499)">Add to Cart</a>
+      </div>
+      
+    
+      <div class="product-card">
+        <img src="2.jpg" alt="2">
+        <h3>DIGI Mechanical Keyboard</h3>
+        <p class="price">999</p>
+        <label for="color-2" class="color-label">Choose Color:</label>
+        <select id="color-2" class="color-selector">
+          <option value="Black">Black</option>
+          <option value="White">White</option>
+          
+        </select>
+        <a href="javascript:void(0);" class="add-to-cart-btn" onclick="addToCart('DIGI Mechanical Keyboard', event, 999)">Add to Cart</a>
+      </div>
+      
+      
+      <div class="product-card">
+        <img src="3.jpg" alt="3">
+        <h3>DIGI HDD</h3>
+        <p class="price">2499</p>
+        <label for="color-3" class="color-label">Choose Color:</label>
+        <select id="color-3" class="color-selector">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+        </select>
+        <a href="javascript:void(0);" class="add-to-cart-btn" onclick="addToCart('DIGI HDD', event, 2499)">Add to Cart</a>
+      </div>
+
+      <div class="product-card">
+        <img src="4.jpg" alt="4">
+        <h3>DIGI Monitor</h3>
+        <p class="price">7899</p>
+        <label for="color-4" class="color-label">Choose Color:</label>
+        <select id="color-4" class="color-selector">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+        </select>
+        <a href="javascript:void(0);" class="add-to-cart-btn" onclick="addToCart('DIGI Monitor', event, 7899)">Add to Cart</a>
+      </div>
+
+      <div class="product-card">
+        <img src="5.jpg" alt="5">
+        <h3>DIGI Wireless Printer</h3>
+        <p class="price">4999</p>
+        <label for="color-5" class="color-label">Choose Color:</label>
+        <select id="color-5" class="color-selector">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+        </select>
+        <a href="javascript:void(0);" class="add-to-cart-btn" onclick="addToCart('DIGI Wireless Printer', event, 4999)">Add to Cart</a>
+      </div>
+
+      <div class="product-card">
+        <img src="6.jpg" alt="6">
+        <h3>DIGI Microphone</h3>
+        <p class="price">799</p>
+        <label for="color-6" class="color-label">Choose Color:</label>
+        <select id="color-6" class="color-selector">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+        </select>
+        <a href="javascript:void(0);" class="add-to-cart-btn" onclick="addToCart('DIGI Microphone', event, 799)">Add to Cart</a>
+      </div>
+
+      <div class="product-card">
+        <img src="7.jpg" alt="7">
+        <h3>DIGI Gaming Speaker</h3>
+        <p class="price">499</p>
+        <label for="color-7" class="color-label">Choose Color:</label>
+        <select id="color-7" class="color-selector">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+        </select>
+        <a href="javascript:void(0);" class="add-to-cart-btn" onclick="addToCart('DIGI Gaming Speaker', event, 499)">Add to Cart</a>
+      </div>
+
+      <div class="product-card">
+        <img src="8.jpg" alt="8">
+        <h3>DIGI Gaming Mouse</h3>
+        <p class="price">299</p>
+        <label for="color-8" class="color-label">Choose Color:</label>
+        <select id="color-8" class="color-selector">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+        </select>
+        <a href="javascript:void(0);" class="add-to-cart-btn" onclick="addToCart('DIGI Gaming Mous', event, 299)">Add to Cart</a>
+      </div>
+
+      <div class="product-card">
+        <img src="9.jpg" alt="9">
+        <h3>DIGI Gaming Headset</h3>
+        <p class="price">599</p>
+        <label for="color-9" class="color-label">Choose Color:</label>
+        <select id="color-9" class="color-selector">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+        </select>
+        <a href="javascript:void(0);" class="add-to-cart-btn" onclick="addToCart('DIGI Gaming Headset', event, 599)">Add to Cart</a>
+      </div>
+
+      <div class="product-card">
+        <img src="10.jpg" alt="10">
+        <h3>DIGI Wired Gamepad</h3>
+        <p class="price">399</p>
+        <label for="color-3" class="color-label">Choose Color:</label>
+        <select id="color-3" class="color-selector">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+        </select>
+        <a href="javascript:void(0);" class="add-to-cart-btn" onclick="addToCart('DIGI Wired Gamepad', event, 399)">Add to Cart</a>
+      </div>
+
+      <div class="product-card">
+        <img src="11.jpg" alt="11">
+        <h3>DIGI SDCard</h3>
+        <p class="price">300</p>
+        <label for="storage-11" class="storage-label">Storage:</label>
+        <select id="storage-11" class="color-selector">
+          <option value="512">512</option>
+        </select>
+        <a href="javascript:void(0);" class="add-to-cart-btn" onclick="addToCart('DIGI SDCard', event, 300)">Add to Cart</a>
+      </div>
+
+      <div class="product-card">
+        <img src="12.jpg" alt="12">
+        <h3>DIGI Docking Station</h3>
+        <p class="price">3399</p>
+        <label for="color-12" class="color-label">Choose Color:</label>
+        <select id="color-12" class="color-selector">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+        </select>
+        <a href="javascript:void(0);" class="add-to-cart-btn" onclick="addToCart('DIGI Docking Station', event, 3399)">Add to Cart</a>
+      </div>
+
+      <div class="product-card">
+        <img src="13.jpg" alt="13">
+        <h3>DIGI WIFI Dongle</h3>
+        <p class="price">599</p>
+        <label for="color-13" class="color-label">Choose Color:</label>
+        <select id="color-13" class="color-selector">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+        </select>
+        <a href="javascript:void(0);" class="add-to-cart-btn" onclick="addToCart('DIGI WIFI Dongle', event, 599)">Add to Cart</a>
+      </div>
+
+      <div class="product-card">
+        <img src="14.jpg" alt="14">
+        <h3>DIGI Webcam</h3>
+        <p class="price">899</p>
+        <label for="color-14" class="color-label">Choose Color:</label>
+        <select id="color-14" class="color-selector">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+        </select>
+        <a href="javascript:void(0);" class="add-to-cart-btn" onclick="addToCart('DIGI Webcam', event, 899)">Add to Cart</a>
+      </div>
+
+      <div class="product-card">
+        <img src="15.jpg" alt="15">
+        <h3>DIGI E-Power Supply</h3>
+        <p class="price">199</p>
+        <label for="color-15" class="color-label">Choose Color:</label>
+        <select id="color-15" class="color-selector">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+        </select>
+        <a href="javascript:void(0);" class="add-to-cart-btn" onclick="addToCart('DIGI E-Power Supply', event, 199)">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+  <hr class="divider">
+</section>
+
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>FOLLOW US ON SOCIAL MEDIA</p>
+  <div class="social-links">
+      <a href="https://www.instagram.com/itsme.jnz/profilecard/?igsh=cG1ibWdsbWJrZG1x" class="icon instagram" target="_blank">INSTAGRAM</a>
+      <a href="https://www.facebook.com/profile.php?id=61569685628505&mibextid=ZbWKwL" class="icon facebook" target="_blank">FACEBOOK</a>
+      <a href="https://www.tiktok.com/@yo.jnzsht?_t=8s0NPjzpvWB&_r=1" class="icon tiktok" target="_blank">TIKTOK</a>
+  </div>
+</section>
+<!-- Footer -->
+<footer>
+  <p>© 2024 DIGI CONNECT</p>
+</footer>
+<script src="cart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
